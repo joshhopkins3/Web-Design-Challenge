@@ -7,7 +7,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <title>City Weather Data</title>
 </head>
 <body>
@@ -47,19 +47,15 @@
         <div class="row">
             <div class="col-lg-7 col-md-12">
                 <div class="box" style="padding-bottom: 20px;">
-                    <h3 class="title">SUMMARY: WEATHER PLOTS <br> (LATITUDE VS. X)</h3>
+                    <h3 class="title">SUMMARY: WEATHER PLOTS <br> (LATITUDE VS)</h3>
                     <hr>
                     <img src="Resources/assets/images/Fig1.png" class="vizualization rounded float-left" alt="Max Temperature Graph">
-                    <p> The purpose of this project was to analyze how weather across 500+ cities across the world
-                      changes as you get closer to the equator. To accomplish this analysis, OpenWeatherMap API was
-                      utilized to assemble the dataset to create a representative model of weather across world cities.</p>
+                    <p> In this project we will analyze how the weather in cities across the world
+                      changes as you get closer to the equator. We will use the OpenWeatherMap API to assemble the dataset and create a representative model of the weather in cities across world.</p>
                       <br>
-                    <p> Matplotlib was used to build a series of plots to showcase the relationships regarding several variables
-                      of weather vs. latitude. Relationships analyzed included: Temperature (F) vs. Latitude, Humidity (%) vs. Latitude,
-                      Cloudiness (%) vs. Latitude, and Wind Speed (mph) vs. Latitude.</p>
-                      <br>
-                    <p> Data and visualizations are are provided as part of the analysis, including explanations and descriptions
-                      of trends and correlations.</p>
+                    <p> Matplotlib was used to plot various aspects of the weather compared to the latitude of the city. The weather factors used for comparisons are: temperature, cloudiness, wind speed, and humidity.</p>
+                       <br>
+                    <p>The source data and visualizations provided, as well as the explanations and descriptions of the trends and correlations, were created as part of the analysis.</p>
                 </div>
             </div>
             <div class="col-lg-5 col-md-12">
@@ -69,13 +65,13 @@
                     <div class="container">
                         <div class="row" style="padding-bottom: 70px;">
                             <div class="col-6">
-                                <div class="title">Latitude vs. Max Temperature</div>
-                                <a href="visualizations/temperature.html">
+                                <div class="title">Latitude vs Max Temperature</div>
+                                <a href="visualizations/temps.html">
                                 <img class="panel" src="Resources/assets/images/Fig1.png" alt="Max Temperature Graph">
                                 </a>
                             </div>
                             <div class="col-6">
-                                <div class="title">Latitude vs. Humidity</div>
+                                <div class="title">Latitude vs Humidity</div>
                                 <a href="visualizations/humidity.html">
                                 <img class="panel" src="Resources/assets/images/Fig2.png" alt="Humidity Graph">
                                 </a>
@@ -83,14 +79,13 @@
                         </div>
                         <div class="row" style="padding-bottom: 70px;">
                             <div class="col-6">
-                                <div class="title">Latitude vs. Cloudiness</div>
+                                <div class="title">Latitude vs Cloudiness</div>
                                 <a href="visualizations/cloudiness.html">
                                 <img class="panel" src="Resources/assets/images/Fig3.png" alt="Cloudiness Graph">
                                 </a>
-                                <!-- <div class="title">vs. Cloudiness</div> -->
                             </div>
                             <div class="col-6">
-                                <div class="title">Latitude vs. Wind Speed</div>
+                                <div class="title">Latitude vs Wind Speed</div>
                                 <a href="visualizations/wind.html">
                                     <img class="panel" src="Resources/assets/images/Fig4.png" alt="Wind Speed Graph">
                                 </a>
